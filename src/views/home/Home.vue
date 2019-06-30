@@ -48,7 +48,7 @@
 
     <div class="home">
       <!-- <div class="home_background" style="background-img: url(../../assets/index.jpg)"></div> -->
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/index.jpg"
+      <div class="parallax_background parallax-window" data-parallax="scroll" :style="{ background: 'url(' + require('../../assets/index.jpg')+')'}"
            data-speed="0.8"></div>
 
       <!-- Header -->
@@ -224,7 +224,7 @@
     <!-- Pricing -->
 
     <div class="pricing">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/pricing.jpg"
+      <div class="parallax_background parallax-window" data-parallax="scroll" :style="{ background: 'url(' + require('../../assets/pricing.jpg')+')'}"
            data-speed="0.8"></div>
       <div class="container">
         <div class="row">
@@ -468,7 +468,7 @@
     <!-- Call to action -->
 
     <div class="cta">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/cta_1.jpg"
+      <div class="parallax_background parallax-window" data-parallax="scroll" :style="{ background: 'url(' + require('../../assets/cta_1.jpg')+')'}"
            data-speed="0.8"></div>
       <div class="container">
         <div class="row">
@@ -601,11 +601,18 @@
 </template>
 
 <script>
+  import url1 from "../../assets/event_9.jpg"
   export default {
-    name: "Home"
+    name: "Home",
+    data() {
+      return{
+        imgUrl:url1
+      }
+    }
   }
 </script>
 
 <style scoped>
-
+  @import "../../../static/css/main_styles.css";
+  @import "../../../static/css/responsive.css";
 </style>

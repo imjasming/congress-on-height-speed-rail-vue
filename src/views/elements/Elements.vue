@@ -45,7 +45,7 @@
     <!-- Home -->
 
     <div class="home">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/contact.jpg" data-speed="0.8"></div>
+      <div class="parallax_background parallax-window" data-parallax="scroll" :style="{ background: 'url(' + require('../../assets/contact.jpg')+')'}" data-speed="0.8"></div>
 
       <!-- Header -->
 

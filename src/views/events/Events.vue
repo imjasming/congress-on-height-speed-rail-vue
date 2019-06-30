@@ -42,7 +42,7 @@
     <!-- Home -->
 
     <div class="home">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/events.jpg" data-speed="0.8"></div>
+      <div class="parallax_background parallax-window" data-parallax="scroll" :style="{ background: 'url(' + require('../../assets/events.jpg')+')'}" data-speed="0.8"></div>
 
       <!-- Header -->
 
@@ -156,7 +156,7 @@
               <div class="row row-lg-eq-height">
                 <div class="col-lg-6 event_col">
                   <div class="event_image_container">
-                    <div class="background_image" style="background-image:url(../../assets/event_9.jpg)"></div>
+                    <div class="background_image" :style="{ background: 'url(' + require('../../assets/event_9.jpg')+')'}"></div>
                     <div class="date_container">
                       <a href="#">
 											<span class="date_content d-flex flex-column align-items-center justify-content-center">
@@ -206,7 +206,7 @@
               <div class="row row-lg-eq-height">
                 <div class="col-lg-6 event_col">
                   <div class="event_image_container">
-                    <div class="background_image" style="background-image:url(../../assets/event_10.jpg)"></div>
+                    <div class="background_image" :style="{ background: 'url(' + require('../../assets/event_10.jpg')+')'}"></div>
                     <div class="date_container">
                       <a href="#">
 											<span class="date_content d-flex flex-column align-items-center justify-content-center">
@@ -256,7 +256,7 @@
               <div class="row row-lg-eq-height">
                 <div class="col-lg-6 event_col">
                   <div class="event_image_container">
-                    <div class="background_image" style="background-image:url(../../assets/event_11.jpg)"></div>
+                    <div class="background_image" :style="{ background: 'url(' + require('../../assets/event_11.jpg')+')'}"></div>
                     <div class="date_container">
                       <a href="#">
 											<span class="date_content d-flex flex-column align-items-center justify-content-center">
@@ -320,7 +320,7 @@
     <!-- Call to action -->
 
     <div class="cta">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/cta_1.jpg" data-speed="0.8"></div>
+      <div class="parallax_background parallax-window" data-parallax="scroll" :style="{ background: 'url(' + require('../../assets/cta_1.jpg')+')'}" data-speed="0.8"></div>
       <div class="container">
         <div class="row">
           <div class="col">
@@ -444,9 +444,15 @@
 </template>
 
 <script>
-    export default {
-        name: "Events"
+  import url1 from "../../assets/event_9.jpg"
+  export default {
+    name: "event",
+    data() {
+      return{
+        imgUrl:url1
+      }
     }
+  }
 </script>
 
 <style scoped>

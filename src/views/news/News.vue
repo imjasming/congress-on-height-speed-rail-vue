@@ -42,7 +42,9 @@
     <!-- Home -->
 
     <div class="home">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/news.jpg" data-speed="0.8"></div>
+      <div class="parallax_background parallax-window" data-parallax="scroll" :style="{ background: 'url(' + require('../../assets/news.jpg')+')'}" data-speed="0.8">
+        <!--<img src="../../assets/news.jpg" alt="">-->
+      </div>
 
       <!-- Header -->
 
@@ -274,7 +276,7 @@
           <div class="col-lg-4">
             <div class="sidebar">
               <div class="tickets">
-                <div class="background_image" style="background-image:url(../../assets/tickets.jpg)"></div>
+                <div class="background_image" :style="{ background: 'url(' + require('../../assets/tickets.jpg')+')'}"></div>
                 <div class="tickets_inner text-center">
                   <div class="tickets_title">Buy Tickets</div>
                   <div class="tickets_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis id expl icabo. Esum dolor sit amet, consect etur adipisi cing elit. Perferendis id explica bo.</div>
@@ -334,7 +336,7 @@
     <!-- Call to action -->
 
     <div class="cta">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/cta_1.jpg" data-speed="0.8"></div>
+      <div class="parallax_background parallax-window" data-parallax="scroll" :style="{ background: 'url(' + require('../../assets/cta_1.jpg')+')'}" data-speed="0.8"></div>
       <div class="container">
         <div class="row">
           <div class="col">
