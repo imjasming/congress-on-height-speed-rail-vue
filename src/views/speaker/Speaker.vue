@@ -153,7 +153,7 @@
         <!-- Speaker -->
         <div class="row row-lg-eq-height">
           <div class="col-lg-6 speaker_col reset_col">
-            <div class="speaker_image" :style="{ background: 'url(' + require('../../assets/speaker_1.jpg')+')'}"></div>
+            <div class="speaker_image" :style="{ backgroundImage: 'url(' + require('../../assets/speaker_1.jpg')+')'}"></div>
           </div>
           <div class="col-lg-6">
             <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
@@ -180,14 +180,14 @@
             </div>
           </div>
           <div class="col-lg-6 speaker_col reset_col order-lg-2 order-1">
-            <div class="speaker_image" :style="{ background: 'url(' + require('../../assets/speaker_2.jpg')+')'}"></div>
+            <div class="speaker_image" :style="{ backgroundImage: 'url(' + require('../../assets/speaker_2.jpg')+')'}"></div>
           </div>
         </div>
 
         <!-- Speaker -->
         <div class="row row-lg-eq-height">
           <div class="col-lg-6 speaker_col reset_col">
-            <div class="speaker_image" :style="{ background: 'url(' + require('../../assets/speaker_3.jpg')+')'}"></div>
+            <div class="speaker_image" :style="{ backgroundImage: 'url(' + require('../../assets/speaker_3.jpg')+')'}"></div>
           </div>
           <div class="col-lg-6">
             <div class="speaker_content d-flex flex-column align-items-start justify-content-center">
@@ -214,7 +214,7 @@
             </div>
           </div>
           <div class="col-lg-6 speaker_col reset_col order-lg-2 order-1">
-            <div class="speaker_image" :style="{ background: 'url(' + require('../../assets/speaker_4.jpg')+')'}"></div>
+            <div class="speaker_image" :style="{ backgroundImage: 'url(' + require('../../assets/speaker_4.jpg')+')'}"></div>
           </div>
         </div>
 
