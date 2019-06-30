@@ -507,6 +507,7 @@
 </script>
 
 <style scoped>
+  @import "../../style/home.css";
   @import "../../../static/css/elements.css";
   @import "../../../static/css/events_responsive.css";
 </style>

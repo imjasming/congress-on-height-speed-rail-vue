@@ -354,6 +354,7 @@
 </script>
 
 <style scoped>
+  @import "../../style/home.css";
 @import "../../../static/css/speakers.css";
 @import "../../../static/css/speakers_responsive.css";
 </style>

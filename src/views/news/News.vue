@@ -464,6 +464,7 @@
 </script>
 
 <style scoped>
+  @import "../../style/home.css";
   @import "../../../static/css/news.css";
   @import "../../../static/css/news_responsive.css";
 </style>

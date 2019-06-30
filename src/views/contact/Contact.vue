@@ -330,6 +330,7 @@
 </script>
 
 <style scoped>
+  @import "../../style/home.css";
   @import "../../../static/css/contact.css";
   @import "../../../static/css/contact_responsive.css";
 </style>

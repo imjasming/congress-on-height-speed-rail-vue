@@ -450,6 +450,7 @@
 </script>
 
 <style scoped>
+  @import "../../style/home.css";
   @import "../../../static/css/events.css";
   @import "../../../static/css/events_responsive.css";
 </style>
