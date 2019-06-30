@@ -13,7 +13,7 @@
           <a href="#">
             <div class="logo_container d-flex flex-row align-items-start justify-content-start">
               <div class="logo_image">
-                <div><img src="img/logo.png" alt=""></div>
+                <div><img src="../../assets/logo.png" alt=""></div>
               </div>
               <div class="logo_content">
                 <div class="logo_text logo_text_not_ie">The Conference</div>
@@ -23,12 +23,12 @@
           </a>
         </div>
         <ul>
-          <li class="menu_item"><a href="index.html">Home</a></li>
+          <li class="menu_item"><router-link to="home"></router-link></li>
           <li class="menu_item"><a href="#">About us</a></li>
           <li class="menu_item"><a href="#">Speakers</a></li>
           <li class="menu_item"><a href="#">Tickets</a></li>
-          <li class="menu_item"><a href="news.html">News</a></li>
-          <li class="menu_item"><a href="contact.html">Contact</a></li>
+          <li class="menu_item"><router-link to="news">News</router-link></li>
+          <li class="menu_item"><router-link to="contact">Contact</router-link></li>
         </ul>
       </div>
       <div class="menu_social">
@@ -47,8 +47,8 @@
     <!-- Home -->
 
     <div class="home">
-      <!-- <div class="home_background" style="background-img: url(img/index.jpg)"></div> -->
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="img/index.jpg"
+      <!-- <div class="home_background" style="background-img: url(../../assets/index.jpg)"></div> -->
+      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/index.jpg"
            data-speed="0.8"></div>
 
       <!-- Header -->
@@ -64,7 +64,7 @@
                       <a href="#">
                         <div class="logo_container d-flex flex-row align-items-start justify-content-start">
                           <div class="logo_image">
-                            <div><img src="img/logo.png" alt=""></div>
+                            <div><img src="../../assets/logo.png" alt=""></div>
                           </div>
                           <div class="logo_content">
                             <div id="logo_text" class="logo_text logo_text_not_ie">The Conference</div>
@@ -98,12 +98,12 @@
                       <div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
                         <nav class="main_nav">
                           <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="active"><a href="/home">Home</a></li>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="speakers.html">Speakers</a></li>
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="/speaker">Speakers</a></li>
+                            <li><a href="/events">Events</a></li>
+                            <li><a href="/news">News</a></li>
+                            <li><a href="/contact">Contact</a></li>
                           </ul>
                         </nav>
                         <div class="header_extra ml-auto">
@@ -166,7 +166,7 @@
 
         <!-- Intro Item -->
         <div class="intro_item">
-          <div class="intro_image"><img src="img/intro_1.jpg" alt=""></div>
+          <div class="intro_image"><img src="../../assets/intro_1.jpg" alt=""></div>
           <div class="intro_body">
             <div class="intro_title"><a href="#">Conference Program</a></div>
             <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
@@ -175,7 +175,7 @@
 
         <!-- Intro Item -->
         <div class="intro_item">
-          <div class="intro_image"><img src="img/intro_2.jpg" alt=""></div>
+          <div class="intro_image"><img src="../../assets/intro_2.jpg" alt=""></div>
           <div class="intro_body">
             <div class="intro_title"><a href="#">Supersessions</a></div>
             <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
@@ -184,7 +184,7 @@
 
         <!-- Intro Item -->
         <div class="intro_item">
-          <div class="intro_image"><img src="img/intro_3.jpg" alt=""></div>
+          <div class="intro_image"><img src="../../assets/intro_3.jpg" alt=""></div>
           <div class="intro_body">
             <div class="intro_title"><a href="#">The Speakers</a></div>
             <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
@@ -193,7 +193,7 @@
 
         <!-- Intro Item -->
         <div class="intro_item">
-          <div class="intro_image"><img src="img/intro_4.jpg" alt=""></div>
+          <div class="intro_image"><img src="../../assets/intro_4.jpg" alt=""></div>
           <div class="intro_body">
             <div class="intro_title"><a href="#">Explore Sessions</a></div>
             <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
@@ -202,7 +202,7 @@
 
         <!-- Intro Item -->
         <div class="intro_item">
-          <div class="intro_image"><img src="img/intro_5.jpg" alt=""></div>
+          <div class="intro_image"><img src="../../assets/intro_5.jpg" alt=""></div>
           <div class="intro_body">
             <div class="intro_title"><a href="#">Directory</a></div>
             <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
@@ -211,7 +211,7 @@
 
         <!-- Intro Item -->
         <div class="intro_item">
-          <div class="intro_image"><img src="img/intro_6.jpg" alt=""></div>
+          <div class="intro_image"><img src="../../assets/intro_6.jpg" alt=""></div>
           <div class="intro_body">
             <div class="intro_title"><a href="#">Speakers Schedule</a></div>
             <div class="intro_subtitle">Donec quis metus ac arcu luctus accumsan.</div>
@@ -224,7 +224,7 @@
     <!-- Pricing -->
 
     <div class="pricing">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="img/pricing.jpg"
+      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/pricing.jpg"
            data-speed="0.8"></div>
       <div class="container">
         <div class="row">
@@ -309,7 +309,7 @@
             <div class="calendar_container">
               <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
                 <div>
-                  <div class="calendar_icon"><img src="img/calendar.svg" alt=""></div>
+                  <div class="calendar_icon"><img src="../../assets/calendar.svg" alt=""></div>
                 </div>
                 <div class="calendar_title">22 april events calendar</div>
               </div>
@@ -318,7 +318,7 @@
                 <!-- Calendar Item -->
                 <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
                   <div>
-                    <div class="calendar_item_image"><img src="img/event_1.jpg" alt=""></div>
+                    <div class="calendar_item_image"><img src="../../assets/event_1.jpg" alt=""></div>
                   </div>
                   <div class="calendar_item_time">
                     <div>14:00</div>
@@ -334,7 +334,7 @@
                 <!-- Calendar Item -->
                 <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
                   <div>
-                    <div class="calendar_item_image"><img src="img/event_2.jpg" alt=""></div>
+                    <div class="calendar_item_image"><img src="../../assets/event_2.jpg" alt=""></div>
                   </div>
                   <div class="calendar_item_time">
                     <div>15:00</div>
@@ -350,7 +350,7 @@
                 <!-- Calendar Item -->
                 <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
                   <div>
-                    <div class="calendar_item_image"><img src="img/event_3.jpg" alt=""></div>
+                    <div class="calendar_item_image"><img src="../../assets/event_3.jpg" alt=""></div>
                   </div>
                   <div class="calendar_item_time">
                     <div>17:00</div>
@@ -366,7 +366,7 @@
                 <!-- Calendar Item -->
                 <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
                   <div>
-                    <div class="calendar_item_image"><img src="img/event_4.jpg" alt=""></div>
+                    <div class="calendar_item_image"><img src="../../assets/event_4.jpg" alt=""></div>
                   </div>
                   <div class="calendar_item_time">
                     <div>20:00</div>
@@ -387,7 +387,7 @@
             <div class="calendar_container">
               <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
                 <div>
-                  <div class="calendar_icon"><img src="img/calendar.svg" alt=""></div>
+                  <div class="calendar_icon"><img src="../../assets/calendar.svg" alt=""></div>
                 </div>
                 <div class="calendar_title">23 april events calendar</div>
               </div>
@@ -396,7 +396,7 @@
                 <!-- Calendar Item -->
                 <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
                   <div>
-                    <div class="calendar_item_image"><img src="img/event_5.jpg" alt=""></div>
+                    <div class="calendar_item_image"><img src="../../assets/event_5.jpg" alt=""></div>
                   </div>
                   <div class="calendar_item_time">
                     <div>14:00</div>
@@ -412,7 +412,7 @@
                 <!-- Calendar Item -->
                 <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
                   <div>
-                    <div class="calendar_item_image"><img src="img/event_6.jpg" alt=""></div>
+                    <div class="calendar_item_image"><img src="../../assets/event_6.jpg" alt=""></div>
                   </div>
                   <div class="calendar_item_time">
                     <div>15:00</div>
@@ -428,7 +428,7 @@
                 <!-- Calendar Item -->
                 <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
                   <div>
-                    <div class="calendar_item_image"><img src="img/event_7.jpg" alt=""></div>
+                    <div class="calendar_item_image"><img src="../../assets/event_7.jpg" alt=""></div>
                   </div>
                   <div class="calendar_item_time">
                     <div>17:00</div>
@@ -444,7 +444,7 @@
                 <!-- Calendar Item -->
                 <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
                   <div>
-                    <div class="calendar_item_image"><img src="img/event_8.jpg" alt=""></div>
+                    <div class="calendar_item_image"><img src="../../assets/event_8.jpg" alt=""></div>
                   </div>
                   <div class="calendar_item_time">
                     <div>20:00</div>
@@ -468,7 +468,7 @@
     <!-- Call to action -->
 
     <div class="cta">
-      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="img/cta_1.jpg"
+      <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="../../assets/cta_1.jpg"
            data-speed="0.8"></div>
       <div class="container">
         <div class="row">
@@ -496,7 +496,7 @@
                   <a href="#">
                     <div class="logo_container d-flex flex-row align-items-start justify-content-start">
                       <div class="logo_image">
-                        <div><img src="img/logo.png" alt=""></div>
+                        <div><img src="../../assets/logo.png" alt=""></div>
                       </div>
                       <div class="logo_content">
                         <div id="logo_text" class="logo_text logo_text_not_ie">The Conference</div>
@@ -577,7 +577,7 @@
                 <div class="footer_extra_right ml-lg-auto text-lg-right">
                   <div class="footer_extra_links">
                     <ul>
-                      <li><a href="contact.html">Contact us</a></li>
+                      <li><a href="/contact">Contact us</a></li>
                       <li><a href="#">Sitemap</a></li>
                       <li><a href="#">Privacy</a></li>
                     </ul>
