@@ -25,37 +25,37 @@ const router = new VueRouter({
           path: 'home',
           name: 'Home',
           component: Home
-        }]
-    },
-    {
-      path: '/elements',
-      name: 'elements',
-      component: Elements,
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: Contact,
-    },
-    {
-      path: '/speaker',
-      name: 'speaker',
-      component: Speaker,
-    },
-    {
-      path: '/news',
-      name: 'news',
-      component: News,
-    },
-    {
-      path: '/events',
-      name: 'events',
-      component: Events,
-    },
-    {//404 notfound
-      path: '*',
+        },
+        {
+          path: 'elements',
+          name: 'elements',
+          component: Elements,
+        },
+        {
+          path: 'contact',
+          name: 'contact',
+          component: Contact,
+        },
+        {
+          path: 'speaker',
+          name: 'speaker',
+          component: Speaker,
+        },
+        {
+          path: 'news',
+          name: 'news',
+          component: News,
+        },
+        {
+          path: 'events',
+          name: 'events',
+          component: Events,
+        },
+        {//404 notfound
+          path: '*',
 
-      name: '404notfound'
+          name: '404notfound'
+        }]
     }
   ]
 })
