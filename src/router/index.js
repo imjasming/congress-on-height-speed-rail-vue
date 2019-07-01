@@ -1,23 +1,31 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+
 const Home = r => require.ensure([], () => r(require('@/views/home/Home')), 'home')
 const Speaker = r => require.ensure([], () => r(require('@/views/speaker/Speaker')), 'speaker')
 const News = r => require.ensure([], () => r(require('@/views/news/News')), 'news')
 const Events = r => require.ensure([], () => r(require('@/views/events/Events')), 'events')
 const Elements = r => require.ensure([], () => r(require('@/views/elements/Elements')), 'elements')
 const Contact = r => require.ensure([], () => r(require('@/views/contact/Contact')), 'contact')
+const Layout = r => require.ensure([], () => r(require('@/components/layout/Layout')), 'contact')
 
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  mode:'history',
+  mode: 'history',
   routes: [
     {
-      path: '/home',
-      name: 'home',
-      component: Home,
+      path: '/',
+      component: Layout,
+      redirect: '/home',
+      children: [
+        {
+          path: 'home',
+          name: 'Home',
+          component: Home
+        }]
     },
     {
       path: '/elements',

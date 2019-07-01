@@ -47,12 +47,9 @@
                     <div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
                       <nav class="main_nav">
                         <ul>
-                          <li class="active"><a href="index.html">Home</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="speakers.html">Speakers</a></li>
-                          <li><a href="events.html">Events</a></li>
-                          <li><a href="news.html">News</a></li>
-                          <li><a href="contact.html">Contact</a></li>
+                          <router-link v-for="item in pathTable" tag="li" :to="item.path" :key="item.id">
+                            <a>{{item.name}}</a>
+                          </router-link>
                         </ul>
                       </nav>
                       <div class="header_extra ml-auto">
@@ -97,7 +94,15 @@
     data() {
       return {
         searchPanelActive: false,
-        classScrolled: ''
+        classScrolled: '',
+        pathTable: [
+          {id:0, path: '/home', name: 'Home'},
+          {id:1, path: '#', name: 'About Us'},
+          {id:2, path: '/speaker', name: 'Speaker'},
+          {id:3, path: '/events', name: 'Events'},
+          {id:4, path: '/news', name: 'News'},
+          {id:5, path: '/contact', name: 'Contact'},
+          ]
       }
     },
     computed: {
